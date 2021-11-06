@@ -1,8 +1,15 @@
-#Password Confirm
+# setting new password
 
-password = "previous_pass"
+previous_password = "prev"
 confirm_password = ""
-while confirm_password != password :
-  confirm_password = input("Enter Your Previous Password: ")
-password = input("Enter new password : ")
-print("your new password is "+password)
+new_password = ""
+guess_count = 0
+guess_limit = 3
+while confirm_password != previous_password and guess_count<guess_limit:
+  confirm_password = input("Enter previous Password : ")
+  guess_count += 1
+  if confirm_password == previous_password:
+    new_password = input("Enter your new password")
+if guess_count==guess_limit:
+  print("back Off")
+  
