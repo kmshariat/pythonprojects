@@ -1,0 +1,30 @@
+#This calculator can take input of a student and calculate how much he needs to pay to the authority 
+name = input("Enter your name ")
+mobile = input("Enter your mobile number ")
+dept = input("Enter your department name ")
+reg = input("Enter your registration id " )
+session = input("Enter Session ")
+semister = input("Enter semester ")
+theoretical_credit = input("Enter theoretical credit no ")
+practical_credit = input("Enter practical credit no ")
+other = int(input("Other expenses (if any)"))
+theoretical_fee = int(theoretical_credit)*105
+practical_fee = int(practical_credit)*160
+total = practical_fee+theoretical_fee+other
+
+print("="*50)
+print("Shahjalal University of Science and Technology, Sylhet")
+print("Session Fee {} ".format(session))
+print("="*50)
+print(f"Name: {name}")
+print(f"Mobile No: {mobile}")
+print(f"Dept. : {dept}")
+print(f"Registration No: {reg}")
+print(f"Semester: {semister}")
+print("="*50)
+print("Theoretical fee = {}".format(theoretical_fee))
+print("Practical fee = {}".format(practical_fee))
+print("Others = {}".format(other))
+print("-"*50)
+print("Total = {}".format(total))
+print("="*50)
