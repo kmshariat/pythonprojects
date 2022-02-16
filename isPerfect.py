@@ -15,6 +15,6 @@ num = int(input("Enter a number "))
 
 #checking if it is a perfect number or not
 if sigma(num)==2*num:
-  print("The number is perfecr")
+  print("The number is perfect")
 else:
   print("Not perfect")
