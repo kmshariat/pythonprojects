@@ -1,8 +1,4 @@
-"""This code prints
-  *
-  **
-  *** ...
-"""
-rows = int(input("How many rows: "))
-for j in range(rows):
-  print("*"*(j+1))
+#pyramid
+row = int(input ("Enter how many rows: "))
+for i in range(row):
+  print(" "*(row-i)+" *"*i)
