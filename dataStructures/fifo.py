@@ -1,3 +1,4 @@
+#FIFO = First In First Out
 nodes =[]
 n = int(input("How many nodes? "))
 for i in range(n):
