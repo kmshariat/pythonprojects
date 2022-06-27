@@ -1,1 +1,1 @@
-This folder includes python codes to solve electrical engineering probles
+This folder includes python codes to solve electrical engineering problems. I will try to develop some algorithms and functions to do this.
