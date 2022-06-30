@@ -1,8 +1,6 @@
 #FIFO = First In First Out
-nodes =[]
-n = int(input("How many nodes? "))
-for i in range(n):
-    nodes.append(float(input("Enter a node ")))
-for j in range(n):
-    print(nodes)
-    del nodes[0]
+def fifo(*arg):
+    list_arg = list(arg) 
+    for i in range(len(arg)):
+        print(list_arg)
+        list_arg.pop(0)
