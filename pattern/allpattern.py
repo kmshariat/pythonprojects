@@ -16,7 +16,7 @@ def pattern_diff(row):
 #22
 #333 
 
-#this function will take the number of rows. It will print * symbol upto row number.
+#this function will take the number of rows. It will print * symbol upto row number as a pyramid structure.
 def pyramid(row):
   for i in range(row+1):
     print(" "*(row-i)+" *"*i) #the spaces will create a uniformly distributed pyramid
@@ -24,3 +24,12 @@ def pyramid(row):
 # *
 # **
 # ***
+
+#this function will take the number of rows. It will print * symbol upto row number as an upside down pyramid structure.
+def revPyramid(row):
+  for i in range(row+1):
+    print(" "*(i+1)+" *"*(row-i))
+#revPyramid(3) will return
+# ***
+# **
+# *
