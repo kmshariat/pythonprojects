@@ -3,8 +3,9 @@
 
 import numpy as np
 
-sum = 0
-for i in range(10000):
-  sum = sum + 1/((i+1)*(i+1))
-
-print(f"pi is almost equal to : {np.sqrt(sum*6)}")
+def pi(iteration):
+    sum = 0
+    for i in range(iteration):
+        sum = sum + 1/(i+1)**2
+        pi = math.sqrt(6*sum)
+    return pi
