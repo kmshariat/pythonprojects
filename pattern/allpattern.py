@@ -33,3 +33,10 @@ def revPyramid(row):
 # ***
 # **
 # *
+
+#this function will take the number of rows. It will print * symbol upto row number as an center aligned pyramid structure
+def centerPyramid(row):
+  i = 0
+  while i <= row+1:
+    print(" "*(row-i)+" *"*(i+1))
+    i = i+2
