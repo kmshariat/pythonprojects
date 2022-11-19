@@ -1,18 +1,28 @@
-#guessing game from Python Projects for begineers by Connor P. Milliken
 from random import randint
-from IPython.display import clear_output
-guessed = False
+
 number = randint(0,100)
 guesses = 0
-while not guessed:
-  ans = input("try to guess the number I am thinking of: ")
+
+while guesses <3:
+  
   guesses +=1
-  clear_output()
-  if int(ans)==number:
-    print("congrats! You guessed it correctly")
-    print("It took you {} guesses!".format(guesses))
+  print("--------------------")
+  print(f"Guess No. {guesses}")
+  usernum = input("Guess a number from 0 to 100: ")
+
+  if int(usernum)==number:
+    print(f"You won! {number} is the right guess")
     break
-  elif int(ans)> number:
-    print("The number is lower than you guessed")
-  elif int(ans)< number:
-    print("The number is greater than you guessed")
+
+  elif int(usernum) > number:
+    print("Guess a lower number ")
+    continue
+
+  elif int(usernum) < number:
+    print("Guess a higher number ")
+    continue
+
+while guesses>=3:
+    print('Game Over')
+    print("--------------------")
+    break
